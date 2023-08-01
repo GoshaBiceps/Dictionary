@@ -31,7 +31,7 @@ namespace Dictionary
                 switch (userInput)
                 {
                     case CommandToWatchWords:
-                        WritesWords(dictionary);
+                        ShowWords(dictionary);
                         break;
 
                     case CommandTouseDictinary:
@@ -46,11 +46,11 @@ namespace Dictionary
             }
         }
 
-        static void WritesWords(Dictionary<string, string> dictionary)
+        static void ShowWords(Dictionary<string, string> dictionary)
         {
-            foreach (var item in dictionary)
+            foreach (var word in dictionary)
             {
-                Console.WriteLine(item.Key);
+                Console.WriteLine(word.Key);
             }
         }
 
